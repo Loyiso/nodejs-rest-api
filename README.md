@@ -1,1 +1,1 @@
-# nodejs-rest-api with MongoDB 
+# nodejs-rest-api

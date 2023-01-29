@@ -1,0 +1,21 @@
+GET http://localhost:3044/api/products
+
+###
+POST http://localhost:3044/api/products
+Content-Type:  application/json
+
+{
+    "name": "August Smart Lock",
+    "description": "August Smart Lock has proven to be a reliable security IoT device. It allows the user to manage their doors from any location hassle-free. It helps the user to keep thieves away and family in your home.",
+    "features":  [
+        {
+            "description":"Allows the user to know about each and every person coming and going into your home."
+        },
+        {
+            "description":"Provides unlimited digital keys and no fear of stolen key."
+        },
+        {
+            "description":"It gives the status updates of your door as it is properly closed or not."
+        }
+    ]
+}
