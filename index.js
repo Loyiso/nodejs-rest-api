@@ -6,6 +6,9 @@ import rateLimit from 'express-rate-limit'
 import * as dotenv from 'dotenv'
 dotenv.config()
 
+let appInsights = require("applicationinsights");
+appInsights.setup(process.env.DATABASE_URL).start();
+
 mongoose.connect(process.env.DATABASE_URL, { useNewUrlParser: true })
 const db = mongoose.connection
 db.on('error', (error) => console.error(error))
